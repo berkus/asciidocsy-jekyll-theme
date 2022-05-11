@@ -1,2 +1,4 @@
 {% capture images_url %}{% unless site.baseurl == "" %}{{ site.baseurl }}{% endunless %}/{{ site.assets_url }}/images{% endcapture %}
 {% capture styles_url %}{% unless site.baseurl == "" %}{{ site.baseurl }}{% endunless %}/{{ site.assets_url }}/css{% endcapture %}
+{% comment %} Scripts already include assets path by default, but NOT baseurl {% endcomment %}
+{% capture scripts_url %}{% unless site.baseurl == "" %}{{ site.baseurl }}{% endunless %}{% endcapture %}
