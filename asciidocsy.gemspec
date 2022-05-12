@@ -2,15 +2,15 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-p $LOAD_PATH
-require "asciidocsy/version"
+# p $LOAD_PATH
+# require "asciidocsy/version"
 
 Gem::Specification.new do |spec|
   spec.bindir        = "bin"
   spec.require_paths = ["lib"]
 
   spec.name          = "asciidocsy"
-  spec.version       = AsciiDocsy::VERSION
+  spec.version       = "0.3.0" # AsciiDocsy::VERSION
   spec.authors       = ["Brian Dominick"]
   spec.email         = ["badominick@gmail.com"]
 
@@ -26,5 +26,4 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-data", "=1.1.1"
   spec.add_development_dependency "bundler", "~> 2.2"
   spec.add_development_dependency "rake", "~> 12.3"
-  spec.add_development_dependency "safe_yaml", "~> 1.0"
 end
